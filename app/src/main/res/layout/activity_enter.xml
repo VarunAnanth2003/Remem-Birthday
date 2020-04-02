@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".EnterActivity">
+
+    <TextView
+        android:id="@+id/titleTextMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/remem_birthday"
+        android:textAllCaps="true"
+        android:textColor="#bc4f43"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/openListsButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:onClick="openLists"
+        android:text="@string/open_lists"
+        android:textColor="#bc4f43"
+        app:layout_constraintBottom_toTopOf="@+id/openListsButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/remindSettings"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:onClick="quitApp"
+        android:text="@string/quit"
+        android:textColor="#bc4f43"
+        app:layout_constraintBottom_toTopOf="@+id/creatorTag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remindSettings2" />
+
+    <Button
+        android:id="@+id/remindSettings2"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:onClick="openSettings"
+        android:text="@string/action_settings"
+        android:textColor="#bc4f43"
+        app:layout_constraintBottom_toTopOf="@+id/remindSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openListsButton3" />
+
+    <Button
+        android:id="@+id/openListsButton3"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:onClick="openAddNew"
+        android:text="@string/add_new"
+        android:textColor="#bc4f43"
+        app:layout_constraintBottom_toTopOf="@+id/remindSettings2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openListsButton" />
+
+    <ImageView
+        android:id="@+id/cakeView"
+        android:layout_width="170dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/an_image_of_a_cake"
+        android:onClick="checkBirthdays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextMain"
+        app:srcCompat="@drawable/eeee" />
+
+    <TextView
+        android:id="@+id/creatorTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/creator_tag"
+        android:textColor="#d8948d"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="312dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="@string/tap_the_cake_to_check_upcoming_birthdays"
+        android:textColor="#ca7268"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/cakeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cakeView"
+        app:layout_constraintVertical_bias="0.916" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

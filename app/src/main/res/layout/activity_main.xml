@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backView2"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exitbutton" />
+
+    <Button
+        android:id="@+id/sendDataButton"
+        android:layout_width="324dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/button_send"
+        android:onClick="submitData"
+        android:textColor="#bc4f43"
+        android:textColorHint="#bc4f43"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/title_text"
+        android:textColor="#ca7268"
+        android:textColorHint="#ca7268"
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="261dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/name"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        android:textColorHint="#ca7268"
+        android:textColor="#ca7268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/birthday"
+        android:fontFamily="@font/montserrat"
+        android:textSize="14sp"
+        android:textColorHint="#ca7268"
+        android:textColor="#ca7268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/editDateButton"
+        android:layout_width="93dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:onClick="editDate"
+        android:text="@string/edit"
+        android:textColor="#bc4f43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/dateView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/editNameButton"
+        android:layout_width="93dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:onClick="editName"
+        android:text="@string/edit"
+        android:textColor="#bc4f43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/nameView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/button_round_shape"
+        android:fontFamily="@font/montserrat"
+        android:onClick="goHome"
+        android:text="@android:string/cancel"
+        android:textColor="#bc4f43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
